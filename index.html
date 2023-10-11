@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Additional task</title>
+</head>
+
+<body>
+    <form action="">
+        <h3>Залишити відгук:</h3>
+        <div class="form-example">
+            <input type="text" id="name" placeholder="Ім&#39я та прізвище">
+
+            <img class="checked-sign" src="./pics/mark.png" alt="">
+
+            <input type="text" id="text" placeholder="Текст відгуку">
+        </div>
+
+        <div class="stars">
+            <span>Ваша оцінка</span>
+            <div class="star-wrap" data-sum-value="0">
+                <div class="star" data-star-val="5">★</div>
+                <div class="star" data-star-val="4">★</div>
+                <div class="star" data-star-val="3">★</div>
+                <div class="star" data-star-val="2">★</div>
+                <div class="star" data-star-val="1">★</div>
+            </div>
+            <div class="out-stars"></div>
+        </div>
+
+        <div class="wrap-attach">
+            <input type="file" id="file" accept=".jpg, .jpeg, .png, image" onchange="download(this)">
+            <div class="attach-photo">
+                <img src="./pics/photo.png" alt="">
+            </div>
+            <div class="text-attach">Прикріпити фото</div>
+        </div>
+        <div class="picture-loaded">
+        </div>
+        <div class="btn"> <input type="submit"></div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

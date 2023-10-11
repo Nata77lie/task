@@ -1,0 +1,154 @@
+form {
+    width: 262px;
+}
+
+h3 {
+    text-align: center;
+}
+
+#name {
+    padding: 15px 15px;
+    width: 230px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+.checked-sign {
+    width: 3%;
+    height: auto;
+    position: relative;
+    bottom: 30px;
+    left: 240px;
+}
+
+#text {
+    width: 230px;
+    border-radius: 3px;
+    height: 100px;
+    padding: 5px 15px;
+    border: 1px solid grey;
+}
+
+#text::placeholder {
+    position: relative;
+    bottom: 40px;
+}
+
+.form-example {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn input {
+    background-color: green;
+    border: none;
+    padding: 10px 70px;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.star-wrap {
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.star {
+    color: #dcdcdc;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.star:hover,
+.star:hover~.star {
+    color: yellow;
+}
+
+.star-wrap[data-sum-value="1"] .star:nth-child(n+5),
+.star-wrap[data-sum-value="2"] .star:nth-child(n+4),
+.star-wrap[data-sum-value="3"] .star:nth-child(n+3),
+.star-wrap[data-sum-value="4"] .star:nth-child(n+2),
+.star-wrap[data-sum-value="5"] .star:nth-child(n+1) {
+    color: yellow;
+}
+
+
+.attach-photo img {
+    width: 20%;
+    height: auto;
+
+}
+
+.stars span {
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.wrap-attach {
+    background-color: grey;
+    width: 88px;
+    border-radius: 2px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.text-attach {
+    font-size: 12px;
+}
+
+.attach-photo img {
+    padding-left: 37px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.close-sign-div {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 82px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.picture-loaded {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.picture-loaded img {
+    width: 50px;
+    height: auto;
+}
+
+.close-sign-div img {
+    width: 30%;
+}
+
+.close-sign-red {
+    position: relative;
+    right: -98px;
+    bottom: 27px;
+}
